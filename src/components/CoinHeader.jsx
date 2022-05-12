@@ -4,9 +4,9 @@ const CoinHeader = ({ data }) => {
   const renderData = () => {
     if (data) {
       return (
-        <div class='d-flex'>
+        <div className='d-flex'>
           <img alt='CryptoImage' className='crypto-image' src={data.image} />
-          <h1 class='ms-3 mt-2'>{data.name}</h1>
+          <h1 className='ms-3 mt-2'>{data.name}</h1>
         </div>
       );
     }
