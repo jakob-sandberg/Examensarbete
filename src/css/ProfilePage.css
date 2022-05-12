@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.profilePage-container {
+  color: white;
+  padding-top: 10px;
+}
+
+.profilePage-header {
+  display: grid;
+  justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.profilePage-header p {
+  font-size: 40px;
+}
+
+.profilePage-header h1 {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+  .profilePage-header h1 {
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profilePage-header p {
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

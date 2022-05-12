@@ -1,0 +1,82 @@
+.trade-main-container {
+  margin-top: 10rem;
+  display: grid;
+}
+
+.trade-heading {
+  text-align: center;
+}
+
+.trade-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.exchange {
+  background: #2c2c6c;
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid #4db5ff;
+  height: fit-content;
+  transition: all 40ms ease;
+}
+
+.exchange:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+
+.exchange-head {
+  background: #4db5ff;
+  color: white;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.exchange-head h3 {
+  color: #1f1f38;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.exchange-list {
+  padding: 2rem;
+}
+
+.exchange-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.exchange-list-icon {
+  color: #4db5ff;
+  margin-top: 2px;
+}
+
+.exchange-list p {
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES (MEDIM DEVICE) */
+@media screen and (max-width: 1024px) {
+  .trade-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .exchange {
+    height: auto;
+  }
+}
+
+/* MEDIA QUERIES (SMALL DEVICE) */
+@media screen and (max-width: 600px) {
+  .trade-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

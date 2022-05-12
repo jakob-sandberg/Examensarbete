@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+.fav-main-container {
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.favCoin-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 20px;
+}
+
+.Coincard {
+  width: 15vw;
+  height: 20vw;
+  text-align: center;
+  border-radius: 10px;
+}
+.Coincard:hover {
+  margin-top: -10px;
+}
+
+.favCoin-image {
+  margin-bottom: 1rem;
+  width: 10vw;
+}
+
+.card__content {
+  width: 90%;
+  height: 95%;
+  background: #2c2c6c;
+  border-radius: 1rem;
+  border: 1px solid #4db5ff;
+  margin: 10px auto;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.card__content:hover {
+  border-color: rgba(77, 181, 255, 0.4);
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .Coincard {
+    width: 20vw;
+    height: 30vw;
+  }
+  .card__header {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+  .fav-main-container {
+    width: 100%;
+  }
+
+  .favCoin-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+  }
+
+  .Coincard {
+    width: 30vw;
+    height: 43vw;
+  }
+  .card__header {
+    font-size: 0.8rem;
+  }
+}

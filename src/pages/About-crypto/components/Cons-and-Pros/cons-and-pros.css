@@ -1,0 +1,62 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pros-and-cons-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  width: 70%;
+}
+
+.pros-and-cons-container > div {
+  background: #2c2c6c;
+  padding: 2.4rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
+.pros-and-cons-container > div:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+
+.pros-and-cons-container > div h4 {
+  color: white;
+}
+
+.pros-and-cons-container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4db5ff;
+}
+
+.pros-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.pros-details {
+  display: flex;
+  gap: 1rem;
+}
+
+.pros-details-icon {
+  margin-top: 6px;
+  color: #4db5ff;
+}
+
+/* MEDIA QUERIES (MEDIM DEVICE) */
+@media screen and (max-width: 1024px) {
+}
+
+/* MEDIA QUERIES (SMALL DEVICE) */
+@media screen and (max-width: 600px) {
+  .pros-and-cons-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

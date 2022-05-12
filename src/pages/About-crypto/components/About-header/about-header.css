@@ -1,0 +1,80 @@
+.about-header-container {
+  padding-top: 5rem;
+}
+
+.about-header-container h3 {
+  margin-top: 3rem;
+  color: #4db5ff;
+  text-align: center;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: 15rem;
+}
+
+.what-is-cards {
+  display: grid;
+}
+
+.what-card {
+  background: #2c2c6c;
+  width: 20vw;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: all 40ms ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 3rem;
+}
+
+.what-card:hover {
+  background: transparent;
+  border-color: rgb(154, 132, 132);
+  cursor: default;
+}
+
+.icon {
+  color: #4db5ff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES (MEDIM DEVICE) */
+@media screen and (max-width: 1024px) {
+  .what-card {
+    margin-left: 5rem;
+    overflow: scroll;
+    width: 20vw;
+  }
+}
+
+/* MEDIA QUERIES (SMALL DEVICE) */
+@media screen and (max-width: 600px) {
+  .cards-container {
+    display: grid;
+  }
+
+  .what-card {
+    width: 70vw;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+  }
+
+  .about-header-container {
+  }
+
+  .about-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

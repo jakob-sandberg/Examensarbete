@@ -1,0 +1,152 @@
+/* LoginPage.js style*/
+
+.logincontainer {
+  padding-top: 4rem;
+  height: 91vh;
+  display: grid;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.toggleText {
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  justify-content: center;
+}
+
+.toggleText:hover {
+  color: #4db5ff;
+}
+
+.buttonContainer {
+  padding: 0px !important;
+}
+
+/* LoginForm.jsx style */
+
+.loginform {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  justify-content: center;
+}
+
+.loginformtext {
+  display: flex;
+  justify-content: center;
+}
+
+.loginformShowing {
+  width: 20vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  margin-top: 10px;
+}
+
+.loginformtext {
+  font-size: 2rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.singInButton {
+  width: max-content;
+  display: inline-block;
+  color: black;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #4db5ff;
+  transition: all 40ms ease;
+}
+
+/* SignUpForm.jsx style */
+
+@media only screen and (max-width: 600px) {
+  .logincontainer {
+    height: 100vh;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .loginform {
+    width: 100%;
+    padding: 2rem;
+  }
+  .loginformShowing {
+    width: 60%;
+  }
+
+  .loginformtext {
+    font-size: 2rem;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 8rem;
+  }
+  .loginform {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .loginformShowing {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .loginform {
+    width: 40%;
+  }
+  .loginformShowing {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .loginform {
+    width: 70%;
+  }
+  .loginformShowing {
+    width: 25%;
+  }
+}
+
+.inputField {
+  border: 1px black;
+}
+
+.errorBox {
+  display: none;
+}
+
+.errorBox.active {
+  display: block;
+}
+
+.errorBox.inactive {
+  display: none;
+}
+
+.singInButton {
+  background-color: #4db5ff;
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+}

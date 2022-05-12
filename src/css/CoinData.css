@@ -1,0 +1,37 @@
+.data-container {
+  margin-top: 4rem;
+  width: 60vw;
+  display: flex;
+  font-size: 20px;
+}
+
+.data-container span {
+  font-size: 1rem;
+}
+
+.coinData-text {
+  color: #4db5ff;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .data-container {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 768px) {
+  .data-container {
+    margin-left: -9rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .circ-supply {
+    display: none;
+  }
+  .supply {
+    display: none;
+  }
+}

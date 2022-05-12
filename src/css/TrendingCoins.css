@@ -1,0 +1,112 @@
+.trend-coin-row {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4vw;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.trend-coin-data {
+  display: flex;
+  text-align: right;
+  font-size: 20px;
+  justify-content: space-between;
+  width: 55vw;
+}
+
+.trend-coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  width: 30vw;
+}
+
+.trend-coin h1 {
+  font-size: 1.5rem;
+  width: 20vw;
+  margin-top: 10px;
+}
+
+.trend-coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .trend-coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6vw;
+    width: 70vw;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  .trend-coin-data {
+    display: flex;
+    text-align: right;
+    font-size: 150px;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 15px;
+  }
+
+  .trend-coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 25vw;
+  }
+
+  .trend-coin h1 {
+    font-size: 15px;
+    width: 15vw;
+    margin-top: 10px;
+  }
+
+  .trend-coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+  .trend-coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+  }
+
+  .trend-coin-data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 15px;
+  }
+
+  .trend-coin {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
+
+  .trend-coin h1 {
+    font-size: 15px;
+    width: 25vw;
+  }
+
+  .trend-coin img {
+    height: 20px;
+    width: 20px;
+  }
+}
