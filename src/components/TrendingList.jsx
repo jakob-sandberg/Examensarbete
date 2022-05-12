@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import TrendingCoins from "./TrendingCoins";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import TrendingCoins from './TrendingCoins';
 
 const TrendingList = () => {
   const [coins, setCoins] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://api.coingecko.com/api/v3/search/trending")
+      .get('https://api.coingecko.com/api/v3/search/trending')
       .then((res) => {
         setCoins(res.data.coins);
-        // console.log("trending", res.data.coins);
       })
       .catch((error) => console.log(error));
   }, []);
